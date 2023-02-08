@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="oneBt,fiveBt,sixBt,fourBt,threeBt,eightBt,zeroBt,twoBt,sevenBt,nineBt" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/operations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="multiplyBt,acBt,plusMinusBt,commaBt,plusBt,minusBt,percentBt,divisionBt" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/equalBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/equal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/commaBt"
+        app:layout_constraintTop_toBottomOf="@+id/plusBt"
+        app:neumorph_backgroundColor="@color/colorAccent"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/plusBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/plus"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/threeBt"
+        app:layout_constraintTop_toBottomOf="@+id/minusBt"
+        app:neumorph_backgroundColor="@color/colorAccent"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/minusBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/minus"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyBt"
+        app:neumorph_backgroundColor="@color/colorAccent"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/multiplyBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/x"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nineBt"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:neumorph_backgroundColor="@color/colorAccent"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/divisionBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/slash"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline5"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:neumorph_backgroundColor="@color/colorAccent"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/commaBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/comma"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/zeroBt"
+        app:layout_constraintTop_toBottomOf="@+id/threeBt"
+        app:layout_constraintVertical_bias="0.758"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/zeroBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_0"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/threeBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_3"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toEndOf="@+id/twoBt"
+        app:layout_constraintTop_toBottomOf="@+id/sixBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/oneBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_1"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/twoBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_2"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/oneBt"
+        app:layout_constraintTop_toBottomOf="@+id/fiveBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/sixBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_6"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/nineBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/fiveBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_5"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/fourBt"
+        app:layout_constraintTop_toBottomOf="@+id/eightBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/fourBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_4"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sevenBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/nineBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_9"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/sevenBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_7"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acBt"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/eightBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/_8"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/sevenBt"
+        app:layout_constraintTop_toTopOf="@+id/guideline10"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline8"
+        app:layout_constraintEnd_toStartOf="@+id/rightBorder"
+        app:layout_constraintStart_toStartOf="@+id/leftBorder"
+        app:layout_constraintTop_toTopOf="@+id/guideline7"
+        app:srcCompat="@drawable/calc_screen"
+        android:contentDescription="@string/todo" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/guidlines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="guideline4,guideline5,rightBorder,guideline3,leftBorder,guideline10,guideline11,guideline7,guideline12,guideline13,guideline8,guideline9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightBorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.98" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/digitalnumbers_normal"
+        android:text="@string/_8888888888"
+        android:textColor="#33000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/acBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/ac"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="1.0"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/plusMinusBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/plus_minus"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/percentBt"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:padding="12dp"
+        android:text="@string/percent"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline10"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/guideline9"
+        app:layout_constraintVertical_bias="1.0"
+        app:neumorph_backgroundColor="@color/colorPrimary"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/realScreenN"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/digitalnumbers_normal"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="@+id/screen"
+        app:layout_constraintEnd_toEndOf="@+id/screen"
+        app:layout_constraintStart_toStartOf="@+id/screen"
+        app:layout_constraintTop_toTopOf="@+id/screen"
+        tools:ignore="RtlHardcoded" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
