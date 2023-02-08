@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/digitalnumbers_normal"
-        android:text="@string/_8888888888"
+        android:text="@string/_888888888888"
         android:textColor="#26000000"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"

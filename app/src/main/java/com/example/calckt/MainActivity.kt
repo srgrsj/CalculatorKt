@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
             (binding.root.findViewById<Button>(id)).setOnClickListener {
 
-                if (binding.realScreenN.text.length > 9) {
+                if (binding.realScreenN.text.length > 11) {
                     canAddDecimal = false
                 }
 
@@ -86,7 +86,6 @@ class MainActivity : AppCompatActivity() {
                             operation = Operations.MULTIPLY
                             return@setOnClickListener
                         }
-
 
                         binding.percentBt -> {
                             operation = Operations.PERCENT
@@ -155,7 +154,7 @@ class MainActivity : AppCompatActivity() {
                 binding.realScreenN.text = if (expression.length <= 10) {
                     expression
                 } else {
-                    String.format(Locale.US, "%7f", expression.toDouble())
+                    String.format(Locale.US, "%10f", expression.toDouble())
                 }
 
                 operation = Operations.EMPTY

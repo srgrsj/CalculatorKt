@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">CalcKt</string>
     <string name="calculator">Calculator</string>
-    <string name="_8888888888">8888888888</string>
+    <string name="_888888888888">888888888888</string>
     <string name="ac">AC</string>
     <string name="plus_minus">+/-</string>
     <string name="percent">%</string>
