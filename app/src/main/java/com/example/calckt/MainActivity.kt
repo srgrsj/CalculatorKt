@@ -102,10 +102,16 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.commaBt.setOnClickListener() {
-            if ("." !in expression) {
-                expression += "."
-                binding.realScreenN.text = expression
+
+            if (expression.isNotEmpty()) {
+                if ("." !in expression) {
+                    expression += "."
+                }
+            } else {
+                expression = "0."
             }
+            binding.realScreenN.text = expression
+
         }
 
         binding.plusMinusBt.setOnClickListener() {
